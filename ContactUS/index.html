@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container-failud">
+      <div class="container col-md">
+        <form action="m1" method="POST">
+          <div class="formtext">
+            <h2>Form</h2>
+          </div>
+          <div class="gropinput">
+            <input
+              name="name"
+              type="Name"
+              placeholder="Name"
+              id="Name"
+              required
+            />
+          </div>
+          <div class="gropinput">
+            <input
+              name="email"
+              type="Email"
+              placeholder="Email"
+              id="Email"
+              required
+            />
+          </div>
+          <div class="gropinput">
+            <input
+              name="mobile"
+              type="Number"
+              placeholder="Number"
+              id="Number"
+              required
+            />
+          </div>
+          <!-- <div class="gropinput">
+            <input name="subject" type="text" placeholder="Subject" id="Subject" required />
+          </div> -->
+          <div class="gropinput">
+            <textarea
+              name="message"
+              placeholder="Message"
+              id="Message"
+              cols=""
+              rows="3"
+            ></textarea>
+          </div>
+          <div class="gropinput">
+            <button type="submit" id="btn">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+    <script>
+      //   var btn = document.getElementById("btn");
+
+      //   btn.addEventListener("click", function (e) {
+      //     e.preventDefault();
+      //     var Name = document.getElementById('Name').value
+      //     var email = document.getElementById('Email').value
+      //     var Number = document.getElementById('Number').value
+      //     var Subject = document.getElementById('Subject').value
+      //     var Message= document.getElementById('Message').value
+      //     var body = 'Name :' + Name + '<br/>' + 'Name :' + Name + '<br/>'+ 'Email :' + email + '<br/>' + 'Number :' + Number + '<br/>' + 'Subject :' + Subject + '<br/>'+ 'Message :' + Message;
+
+      //     Email.send({
+      //       Host: "smtp.gmail.com",
+      //       Username: "axaybhimani@gmail.com",
+      //       Password: "zpkdldecmoavpynf",
+      //       To: "axaybhimani@gmail.com",
+      //       From: email,
+      //       Subject: "hello",
+      //       Body: body,
+      //     }).then((message) => alert(message));
+      //   });
+
+      //   function sendEmail() {
+      //     Email.send({
+      //       Host: "smtp.elasticemail.com",
+      //       Username: "axaybhimani@gmail.com",
+      //       Password: "exwcwqskrzfqzprm",
+      //       To: "axaybhimani@gmail.com",
+      //       From: document.getElementById("Email").value,
+      //       Subject: "hello",
+      //       Body: "hi how to you",
+      //     }).then((message) => alert(message));
+      //   }
+    </script>
+  </body>
+</html>

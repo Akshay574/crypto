@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------------------------color Backgroud ----------------------------------- */
+
+:root {
+    --white-color: #ffffff;
+    --Gray-color: #adb9c7;
+    --primary-bllue: #1e50ff;
+    --primary-backroud-blue: rgba(30, 80, 255, 0.1);
+    --Gray-backgroud: #272d37;
+    --Gray-timebackgrod: #0f182e;
+  }
+  
+
+body{
+    background-image: url(imager/Version\ 1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1 {
+    font-style: normal;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: max(16px, min(10vw, 55px));
+    /* font-size: 86px; */
+    line-height: max(16px, min(12vw, 80px));
+    color: var(--white-color);
+    overflow: hidden;
+  }
+  h2 {
+    font-style: normal;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: max(16px, min(8vw, 40px));
+    line-height: 54px;
+    text-transform: capitalize;
+    color: var(--white-color);
+    overflow: hidden;
+  }
+
+
+  /* --------------------container------------------------- */
+  .container-failud{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .container{
+    max-width: 100%;
+    width: 40%;
+    overflow: hidden;
+  }
+  .gropinput {
+    margin-bottom: 20px;
+  }
+  .gropinput input,
+  .gropinput textarea{
+    font-style: normal;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    width: 100%;
+    padding: 18px 10px;
+    border-radius: 10px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    background-color: var(--Gray-timebackgrod);
+    color: var(--white-color);
+    /* text-transform: capitalize; */
+  }
+  ::placeholder{
+    color: var(--primary-bllue);
+  }
+  .gropinput button{
+    font-style: normal;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    background-color: var(--primary-bllue);
+    color: var(--white-color);
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+  }
+
+
+  /* ----------------------resposive-media---------------------------- */
+
+  @media screen and (max-width: 800px) {
+    .col-md{
+        max-width: 100%;
+        width: 70%;
+    }
+  }
